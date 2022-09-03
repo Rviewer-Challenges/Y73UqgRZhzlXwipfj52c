@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**
+ * VARIABLES GLOBALES
+ */
+
+:root {
+
+    /* paleta de colores */
+    --color-primary-400: #43A5A2;
+    --bg-color: #fff;
+    --bg-color-variant: #F9F9F9;
+
+    --text-color-500: #1E1E1E;
+    --text-color-400: #454545;
+    --text-color-300: #7F7F7F;
+    --text-color-200: #B4B4B4;
+
+    /* fuentes de texto */
+    --main-font: 'Inter', sans-serif;
+    /* --icon-font: 'google-icon'; */
+
+    /* Tamaño de texto */
+    --biggest-font-size: 2.5rem; /* 40px */
+    --bigger-font-size: 2.25rem; /* 36px */
+    --big-font-size: 1.5rem; /* 24px */
+    --normal-font-size: 1.25rem; /* 20px */
+    --small-font-size: 1rem; /* 16px */
+    --smaller-font-size: 0.875rem; /* 14px */
+
+    --regular-font: 400;
+    --medium-font: 500;
+    --semibold-font: 600;
+    --bold-font: 700;
+
+    /* Otros */
+    --header-height: 112px;
+    --time-fast: 0.25s;
+    --time-normal: 0.5s;
+    --time-large: 0.75s;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b {
+    font-weight: var(--font-medium);
+}
+
+button{
+    font-family: var(--main-font);
+}
+
+img {
+    width: 100%;
+}
+
+/**
+ * HEADER PRINCIPAL
+**/
+
+.main-header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5rem;
+    background-color: var(--bg-color);
+    z-index: 100;
+    transition: box-shadow var(--time-normal);
+    transition: padding var(--time-normal);
+}
+
+.main-header .logo {
+    height: 3.75rem;
+}
+
+.main-nav .list {
+    display: flex;
+    gap: 2.25rem;
+    list-style: none;
+}
+
+.main-nav .link {
+    text-decoration: none;
+    font-size: var(--small-font-size);
+    font-weight: var(--bold-font);
+    color: var(--text-color-500);
+}
+
+.main-nav .link:hover {
+    color: var(--color-primary-400);
+}
+
+/* head scroll down */
+
+.scroll-header {
+    box-shadow: 0 -1px 5px rgb(0, 0, 0,.15);
+    padding: 0.25rem 5rem;
+}
+
+.main-home {
+    /* background-color: yellow; */
+    height: 100vh;
+    padding-top: var(--header-height);
+}
+
+body {
+    height: 200vh;
+}
