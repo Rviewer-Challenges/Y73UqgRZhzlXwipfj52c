@@ -5,33 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/icon-dev.svg">
     <link rel="stylesheet" href="style/style.css">
-    <title>dev</title>
+    <link rel="stylesheet" href="icons/style.css">
+    <title>Dev</title>
 </head>
 <body>
     <header class="main-header" id="main-header">
-        <div>
-            <a href="#">
-                <img src="img/logo-dev.svg" class="logo" alt="Logo dev">
-            </a>
+        <div class="container">
+            <div>
+                <a href="#">
+                    <img src="img/logo-dev.svg" class="logo" alt="Logo dev">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="list">
+                    <li>
+                        <a href="#" class="link">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">Aprendizaje</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">Herramientas</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="main-nav">
-            <ul class="list">
-                <li>
-                    <a href="#" class="link">Inicio</a>
-                </li>
-                <li>
-                    <a href="#" class="link">Aprendizaje</a>
-                </li>
-                <li>
-                    <a href="#" class="link">Herramientas</a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
-    <section class="main-home">
-        <h1>hola</h1>
-    </section>
+    <div class="main-home">
+        <div class="container">
+            <section class="content-home">
+                <div class="content-information">
+                    <h1 class="title">Estas empezando en el mundo del desarrollo web</h1>
+                    <p class="text-description">Aquí encontraras una ruta de aprendizaje para guiarte, asi como herramientas y recursos que te ayudaran en el desarrollo de proyectos.</p>
+                    <div>
+                        <button class="button">Comenzar</button>
+                    </div>
+                </div>
+                <div class="content-information">
+                    <img src="img/img-programmer.png" class="img" alt="Programmer">
+                </div>
+            </section>
+            <div class="scroll">
+                <a href="#" class="button-scroll">
+                    <span class="action-button icon-mouse"></span>
+                    <span class="scroll-text">Scroll</span>
+                    <span class="action-button icon-arrow-down scroll-arrow-down"></span>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <script src="scripts/script-index.js"></script>
 </body>
