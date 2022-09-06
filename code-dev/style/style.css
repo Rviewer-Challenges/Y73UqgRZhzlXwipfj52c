@@ -42,6 +42,14 @@
     --semibold-font: 600;
     --bold-font: 700;
 
+    /* Scroll */
+    --scroll-size: 16px;
+    --scroll-bg : transparent;
+    --scroll-radius: 8px;
+    --scroll-padding: 4px;
+    --thumb-bg: var(--text-color-300);
+    --thumb-bg-alt: var(--text-color-200);
+
     /* Otros */
     --header-height: 112px;
     --time-0-4s: 0.4s;
@@ -112,6 +120,27 @@ img {
     width: var(--size);
 }
 
+
+/* scroll */
+
+
+ .scroll::-webkit-scrollbar {
+    width: var(--scroll-size);
+    height: var(--scroll-size);
+ }
+ 
+ .scroll::-webkit-scrollbar-thumb {
+     background-color: var(--thumb-bg-alt);
+     border-radius: var(--scroll-radius);
+     border: var(--scroll-padding) solid transparent;
+     background-clip: content-box;
+ }
+ 
+ .scroll::-webkit-scrollbar-thumb:hover {
+     background-color: var(--thumb-bg);
+     display: block;
+ }
+ 
 /**
  * HEADER PRINCIPAL
 **/
@@ -574,3 +603,4 @@ shadow-drop-center{
     font-size: 1.5rem;
     color: var(--text-color-300);
 }
+
