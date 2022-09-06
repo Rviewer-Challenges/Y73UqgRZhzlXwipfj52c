@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'galo-icon';
-  src:  url('fonts/galo-icon.eot?ppp4fk');
-  src:  url('fonts/galo-icon.eot?ppp4fk#iefix') format('embedded-opentype'),
-    url('fonts/galo-icon.ttf?ppp4fk') format('truetype'),
-    url('fonts/galo-icon.woff?ppp4fk') format('woff'),
-    url('fonts/galo-icon.svg?ppp4fk#galo-icon') format('svg');
+  src:  url('fonts/galo-icon.eot?ncw8o4');
+  src:  url('fonts/galo-icon.eot?ncw8o4#iefix') format('embedded-opentype'),
+    url('fonts/galo-icon.ttf?ncw8o4') format('truetype'),
+    url('fonts/galo-icon.woff?ncw8o4') format('woff'),
+    url('fonts/galo-icon.svg?ncw8o4#galo-icon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,60 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-navigation .path1:before {
+  content: "\e902";
+  color: rgb(49, 136, 131);
+}
+.icon-navigation .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(49, 136, 131);
+}
+.icon-navigation .path3:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(137, 202, 201);
+}
+.icon-navigation .path4:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(137, 202, 201);
+}
+.icon-navigation .path5:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(137, 202, 201);
+}
+.icon-navigation .path6:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(137, 202, 201);
+}
+.icon-navigation .path7:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(137, 202, 201);
+}
+.icon-navigation .path8:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(67, 165, 162);
+}
+.icon-navigation .path9:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(137, 202, 201);
+}
+.icon-navigation .path10:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(137, 202, 201);
+}
+.icon-navigation .path11:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(49, 136, 131);
+}
 .icon-arrow-down:before {
   content: "\e900";
 }

@@ -274,9 +274,129 @@ img {
     color: var(--text-color-400);
 }
 
+/**
+ * SECCIÓN RUTA DE APRENDIZAJE
+**/
+
+.main-route {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color-variant);
+}
+
+.main-route .container {
+    min-width: var(--min-width-section);
+    max-width: var(--max-width-section);
+    margin: 0 2rem;
+    /* background-color: yellow; */
+}
+
+.main-route .route-title {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.main-route .title {
+    font-size: var(--bigger-font-size);
+    font-weight: var(--bold-font);
+    color: var(--text-color-500);
+}
+
+.main-route .image-title {
+    --size: 3rem;
+    height: var(--size);
+    width: var(--size);
+}
+
+.main-route .route-section {
+    /* display: flex; */
+    /* grid-template-columns: .8fr; */
+    /* justify-content: center; */
+}
+
+.route-section .route-data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.route-section .route-circle {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--color-primary-400);
+    border-radius: 50%;
+}
+
+.route-section .route-line {
+    display: block;
+    width: 8px;
+    height: 100%;
+    background-color: var(--color-primary-400);
+    transform: translate(8px, -12px);
+}
+
+/* .route-section .content-data-left {
+    justify-content: end;
+    padding-right: 3rem;
+}
+
+.route-section .content-data-right {
+    justify-content: start;
+    padding-left: 3rem;
+} */
+
+.route-data .content-data {
+    justify-content: end;
+    padding-right: 3rem;
+}
+
+.route-data:nth-child(even) .content-data {
+    justify-content: start;
+    padding-left: 3rem;
+}
+
+.route-section .card-route {
+    display: flex;
+    background-color: var(--bg-color);
+    width: 340px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 30px 60px rgb(141, 139, 139,0.20);
+    gap: 1rem;
+    margin-bottom: 6rem;
+}
 
 
+
+.route-section .image-tecnoligia {
+    height: 70px;
+    width: auto;
+}
+
+.route-data .item-title {
+    font-size: var(--big-font-size);
+    font-weight: var(--semibold-font);
+    color: var(--text-color-400);
+    margin-bottom: 0.5rem;
+}
+
+.route-data .item-description {
+    font-size: var(--small-font-size);
+    font-weight: var(--regular-font);
+    color: var(--text-color-300);
+}
+
+
+.content-center {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
 
 body {
-    height: 200vh;
+    /* height: 200vh; */
 }
