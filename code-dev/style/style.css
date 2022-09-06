@@ -187,6 +187,7 @@ img {
 .main-home .container {
     display: flex;
     height: 100%;
+    width: 100%;
     min-width: var(--min-width-section);
     max-width: var(--max-width-section);
     margin: 0 2rem;
@@ -285,18 +286,18 @@ img {
 }
 
 .main-route .container {
+    width: 100%;
     min-width: var(--min-width-section);
     max-width: var(--max-width-section);
     margin: 0 2rem;
-    /* background-color: yellow; */
 }
 
 .main-route .route-title {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding-top: 6rem;
-    padding-bottom: 4rem;
+    padding-top: 7rem;
+    padding-bottom: 6rem;
 }
 
 .main-route .title {
@@ -309,12 +310,6 @@ img {
     --size: 3rem;
     height: var(--size);
     width: var(--size);
-}
-
-.main-route .route-section {
-    /* display: flex; */
-    /* grid-template-columns: .8fr; */
-    /* justify-content: center; */
 }
 
 .route-section .route-data {
@@ -339,16 +334,6 @@ img {
     transform: translate(8px, -12px);
 }
 
-/* .route-section .content-data-left {
-    justify-content: end;
-    padding-right: 3rem;
-}
-
-.route-section .content-data-right {
-    justify-content: start;
-    padding-left: 3rem;
-} */
-
 .route-data .content-data {
     justify-content: end;
     padding-right: 3rem;
@@ -369,8 +354,6 @@ img {
     gap: 1rem;
     margin-bottom: 6rem;
 }
-
-
 
 .route-section .image-tecnoligia {
     height: 70px;
@@ -396,6 +379,146 @@ img {
     justify-content: end;
     align-items: center;
 }
+
+/**
+ * SECCIÓN HERRAMIENTAS
+**/
+
+.main-tools {
+    display: flex;
+    justify-content: center;
+}
+
+.main-tools .container {
+    width: 100%;
+    min-width: var(--min-width-section);
+    max-width: var(--max-width-section);
+    margin: 7rem 4rem 7rem 4rem;
+    /* background-color: yellow; */
+}
+
+.main-tools .tools-title {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 6rem;
+}
+
+.main-tools .title {
+    font-size: var(--bigger-font-size);
+    font-weight: var(--bold-font);
+    color: var(--text-color-500);
+}
+
+.main-tools .image-title {
+    --size: 3rem;
+    height: var(--size);
+    width: var(--size);
+}
+
+.main-tools .tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.main-tools .card-tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+    min-width: 200px;
+    height: 210px;
+    border: 1px solid var(--text-color-200);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.shadow-drop-center:hover {
+    animation:shadow-drop-center 0.6s linear both
+} 
+@keyframes 
+shadow-drop-center{
+    0%{box-shadow:0 0 0 0 transparent}
+    100%{box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.2)}
+}
+
+.main-tools .card-tools:hover {
+    border: 2px solid var(--color-primary-500);
+    background-color: #F4F4F4;
+}
+.main-tools .card-tools:hover .card-title {
+    color: var(--text-color-400);
+}
+
+.main-tools .card-tools .image-card {
+    --size: 100px;
+    width: var(--size);
+    height: var(--size);
+}
+
+.card-tools .card-title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--medium-font);
+    color: var(--text-color-300);
+    margin-top: 1.75rem;
+    transition: 0.3s;
+}
+
+.main-tools .card-tools-end {
+    
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    min-width: 800px;
+    max-width: 908px;
+    border: 1px solid #CDCDCD;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    padding: 2.25rem 6rem;
+    transition: 0.3s;
+}
+
+.main-tools .card-tools-end:hover {
+    border: 2px solid var(--color-primary-500);
+    /* background-color: #F4F4F4; */
+}
+
+.main-tools .card-tools-end:hover .card-title {
+    color: var(--text-color-400);
+}
+
+.main-tools .card-tools-end:hover .card-description {
+    color: var(--text-color-300);
+}
+
+.main-tools .card-tools-end .image-card {
+    --size: 200px;
+    width: 100%;
+    height: var(--size);
+}
+
+.main-tools .card-tools-end .card-title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--medium-font);
+    color: var(--text-color-300);
+    margin-bottom: 1rem;
+    transition: 0.3s;
+}
+.main-tools .card-tools-end .card-description {
+    font-size: var(--small-font-size);
+    font-weight: var(--regular-font);
+    color: var(--text-color-200);
+    transition: 0.3s;
+    /* margin-top: 1.75rem; */
+}
+
+
+
 
 body {
     /* height: 200vh; */
