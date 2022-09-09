@@ -63,11 +63,12 @@
                 <h2 class="title">Ruta de aprendizaje</h2>
             </div>
             <div class="route-section">
-                <div class="content">
+                <div class="content-route" id="content_route">
 
                     <div class="route-data">
+                        
                         <div class="content-data flex">
-                            <div class="card-route">
+                            <div class="card-route" id="card_html" onclick="openModalRoute(this)">
                                 <div class="content-center">
                                     <img src="img/ic-html-5.svg" class="image-tecnoligia" alt="Logotipo de">
                                 </div>
@@ -91,7 +92,7 @@
                             <span class="route-line"></span>
                         </div>
                         <div class="content-data flex">
-                            <div class="card-route">
+                            <div class="card-route" id="card_css" onclick="openModalRoute(this)">
                                 <div class="content-center">
                                     <img src="img/ic-css-3.svg" class="image-tecnoligia" alt="Logotipo de">
                                 </div>
@@ -105,7 +106,7 @@
                     
                     <div class="route-data">
                         <div class="content-data flex">
-                            <div class="card-route">
+                            <div class="card-route" id="card_js" onclick="openModalRoute(this)">
                                 <div class="content-center">
                                     <img src="img/ic-javascript.svg" class="image-tecnoligia" alt="Logotipo de">
                                 </div>
@@ -126,9 +127,10 @@
                         <div></div>
                         <div>
                             <span class="route-circle"></span>
+                            <span class="route-line"></span>
                         </div>
                         <div class="content-data flex">
-                            <div class="card-route">
+                            <div class="card-route" id="card_git" onclick="openModalRoute(this)">
                                 <div class="content-center">
                                     <img src="img/ic-git.svg" class="image-tecnoligia" alt="Logotipo de">
                                 </div>
@@ -140,9 +142,55 @@
                         </div>
                     </div>
 
+                    <div class="route-data">
+                        <div class="content-data flex">
+                            <div class="card-route" id="card_project" onclick="openModalRoute(this)">
+                                <div class="content-center">
+                                    <img src="img/ic-website.svg" class="image-tecnoligia" alt="Logotipo de">
+                                </div>
+                                <div>
+                                    <h3 class="item-title">Proyectos</h3>
+                                    <p class="item-description">Reforzar los conocimentos</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="route-circle"></span>
+                            <span class="route-line"></span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
+
+        <div class="route-model" id="route_model">
+            <div class="container-modal">
+                <div class="modal-header">
+                    <h3 class="title-model">Title</h3>
+                    <button class="close-model" id="close_model_route"><span class="action-button icon-close"></span></button>
+                </div>
+                <div class="modal-body scroll">
+                    <!-- Aqui entra los items del modal route -->
+
+                    <!-- <div class="modal-card">
+                        <div class="content-img">
+                            <img src="" class="image-card" alt="">
+                        </div>
+                        <div class="content-card">
+                            <div class="card-header">
+                                <h4 class="title-card">W3Schools Free Online Web Tutorials</h4>
+                                <a href="#" class="link-open"><span class="action-button icon-open-in-new"></span></a>
+                            </div>
+                            <p class="description-card">W3Schools es un sitio web para aprender tecnologías web en línea. Está optimizado para el aprendizaje, las pruebas y la formación. Los ejemplos pueden simplificarse para mejorar.</p>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <section class="main-tools">
@@ -201,6 +249,6 @@
         </div>
     </footer>
 
-    <script src="scripts/script-index.js"></script>
+    <script src="scripts/script-index.js" type="module"></script>
 </body>
 </html>
