@@ -27,7 +27,8 @@ function data () {
             {
                 title: 'Freecodecamp: Learn HTML - Responsive Web Design Study Guide',
                 description: 'In this article, I have created a study guide for the entire Learn HTML by Building a Cat Photo App practice project. This study guide is filled with additional information, links, and videos to help you understand the concepts better.',
-                url: 'https://i.imgur.com/NxaPIXS.jpg'
+                url: 'https://www.freecodecamp.org/news/freecodecamp-responsive-web-design-study-guide/',
+                img: 'https://i.imgur.com/wxzQ3Tf.png'
             },
             {
                 title: 'Marksheet',
