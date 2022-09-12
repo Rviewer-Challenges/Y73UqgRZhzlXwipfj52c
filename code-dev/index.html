@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon-dev.svg">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="icons/style.css">
+    <title>Dev</title>
+</head>
+<body class="scroll">
+    <header class="main-header" id="main_header">
+        <div class="container">
+            <div>
+                <a href="#">
+                    <img src="img/logo-dev.svg" class="logo" alt="Logo dev">
+                </a>
+            </div>
+            <nav class="main-nav" id="nav_menu">
+                <ul class="list">
+                    <li>
+                        <a href="#home" class="link active-link">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#route" class="link">Aprendizaje</a>
+                    </li>
+                    <li>
+                        <a href="#tools" class="link">Herramientas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main-home" id="home">
+        <div class="container">
+            <div class="content-home">
+                <div class="content-information">
+                    <h1 class="title">¿Estas empezando en el mundo del desarrollo web?</h1>
+                    <p class="text-description">Aquí encontraras una ruta de aprendizaje para guiarte, así como herramientas y recursos que te ayudaran en el desarrollo de proyectos.</p>
+                        <a href="#route" class="button">Comenzar</a>
+                </div>
+                <div class="content-information">
+                    <img src="img/img-programmer.png" class="img" alt="Programmer">
+                </div>
+            </div>
+            <div class="scroll">
+                <a href="#route" class="button-scroll">
+                    <span class="action-button icon-mouse"></span>
+                    <span class="scroll-text">Scroll</span>
+                    <span class="action-button icon-arrow-down scroll-arrow-down"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-route" id="route">
+        <div class="container">
+            <div class="route-title flex">
+                <img src="img/navigation.svg" class="image-title" alt="Logo de navegación">
+                <h2 class="title">Ruta de aprendizaje</h2>
+            </div>
+            <div class="route-section">
+                <div class="content-route" id="content_route">
+
+                    <div class="route-data">
+                        
+                        <div class="content-data flex">
+                            <div class="card-route" id="card_html" onclick="openModalRoute(this)">
+                                <div class="content-center">
+                                    <img src="img/ic-html-5.svg" class="image-tecnoligia" alt="Logotipo de">
+                                </div>
+                                <div>
+                                    <h3 class="item-title">HTML</h3>
+                                    <p class="item-description">HyperText Markup Language</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="route-circle"></span>
+                            <span class="route-line"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="route-data">
+                        <div></div>
+                        <div>
+                            <span class="route-circle"></span>
+                            <span class="route-line"></span>
+                        </div>
+                        <div class="content-data flex">
+                            <div class="card-route" id="card_css" onclick="openModalRoute(this)">
+                                <div class="content-center">
+                                    <img src="img/ic-css-3.svg" class="image-tecnoligia" alt="Logotipo de">
+                                </div>
+                                <div>
+                                    <h3 class="item-title">CSS</h3>
+                                    <p class="item-description">Cascading Style Sheets</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="route-data">
+                        <div class="content-data flex">
+                            <div class="card-route" id="card_js" onclick="openModalRoute(this)">
+                                <div class="content-center">
+                                    <img src="img/ic-javascript.svg" class="image-tecnoligia" alt="Logotipo de">
+                                </div>
+                                <div>
+                                    <h3 class="item-title">JavaScript</h3>
+                                    <p class="item-description">Lenguaje de programación o scripting</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="route-circle"></span>
+                            <span class="route-line"></span>
+                        </div>
+                    </div>
+
+                    <div class="route-data">
+                        <div></div>
+                        <div>
+                            <span class="route-circle"></span>
+                            <span class="route-line"></span>
+                        </div>
+                        <div class="content-data flex">
+                            <div class="card-route" id="card_git" onclick="openModalRoute(this)">
+                                <div class="content-center">
+                                    <img src="img/ic-git.svg" class="image-tecnoligia" alt="Logotipo de">
+                                </div>
+                                <div>
+                                    <h3 class="item-title">Git</h3>
+                                    <p class="item-description">Sistema de control de versiones</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="route-data">
+                        <div class="content-data flex">
+                            <div class="card-route" id="card_project" onclick="openModalRoute(this)">
+                                <div class="content-center">
+                                    <img src="img/ic-website.svg" class="image-tecnoligia" alt="Logotipo de">
+                                </div>
+                                <div>
+                                    <h3 class="item-title">Proyectos</h3>
+                                    <p class="item-description">Reforzar los conocimentos</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="route-circle"></span>
+                            <span class="route-line"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="main-tools" id="tools">
+        <div class="container">
+            <div class="tools-title flex">
+                <img src="img/tools.svg" class="image-title" alt="Logo de navegación">
+                <h2 class="title">Herramientas</h2>
+            </div>
+
+            <div class="tools-grid">
+
+                <div class="card-tools" id="card_images" onclick="openModalTools(this)">
+                    <img src="img/tools-image.svg" class="image-card" alt="">
+                    <h3 class="card-title">Imágenes</h3>
+                </div>
+                <div class="card-tools" id="card_icons" onclick="openModalTools(this)">
+                    <img src="img/tools-icons.svg" class="image-card" alt="">
+                    <h3 class="card-title">Iconos</h3>
+                </div>
+                <div class="card-tools" id="card_text" onclick="openModalTools(this)">
+                    <img src="img/tools-text.svg" class="image-card" alt="">
+                    <h3 class="card-title">Texto</h3>
+                </div>
+                <div class="card-tools" id="card_color" onclick="openModalTools(this)">
+                    <img src="img/tools-color.svg" class="image-card" alt="">
+                    <h3 class="card-title">Color</h3>
+                </div>
+                <div class="card-tools" id="card_code" onclick="openModalTools(this)">
+                    <img src="img/tools-code.svg" class="image-card" alt="">
+                    <h3 class="card-title">Codificación</h3>
+                </div>
+                <div class="card-tools" id="card_music" onclick="openModalTools(this)">
+                    <img src="img/tools-music.svg" class="image-card" alt="">
+                    <h3 class="card-title">Música</h3>
+                </div>
+                <div class="card-tools-end" id="card_content_creators" onclick="openModalContentCreator(this)">
+                    <img src="img/developer-team.png" class="image-card" alt="">
+                    <div>
+                        <h3 class="card-title">Creadores de contenido</h3>
+                        <p class="card-description">Puedes apoyarte en creadores de contenido que comparten su conocimiento con toda la comunidad de desarrolladores a través de redes sus sociales.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="main-modal" id="main_modal">
+        <div class="container-modal">
+            <div class="modal-header">
+                <h3 class="title-modal">Title</h3>
+                <button class="close-modal" id="close_modal"><span class="action-button icon-close"></span></button>
+            </div>
+            <div class="modal-body scroll">
+                <!-- Aqui entra los items del modal  -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="creator-modal" id="creator_modal">
+        <div class="container-modal">
+            <div class="modal-header">
+                <h3 class="title-modal">Title</h3>
+                <button class="close-modal" id="close_modal_creator"><span class="action-button icon-close"></span></button>
+            </div>
+            <div class="modal-body">
+                <!-- Aqui entra los items del modal de creadores de contenido -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p class="footer-description">Desarrollado por <span class="owner">Galo Sánchez</span> e impulsado por el Hackathon del <a class="day-programming" href="https://diadelaprogramacion.com/" target="_blank">Día de la programación</a> 2022.</p>
+            <div class="content-icon">
+                <a href="https://github.com/galosanchez" target="_blank" class="social-network"><span class="action-button icon-github"></span></a>
+                <a href="https://twitter.com/galosanchez_r" target="_blank" class="social-network"><span class="action-button icon-twitter"></span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/script-index.js" type="module"></script>
+</body>
+</html>
